@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintHeight_percent="0.37"
+        android:background="@color/ColorBackgroundLayer"/>
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/logoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VISION GO"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            app:layout_constraintVertical_bias=".2"
+            app:layout_constraintTop_toBottomOf="@id/imageLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/vie_bg"
+        app:layout_constraintVertical_bias="1"
+        >
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent=".8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.027" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="140dp"
+            android:text="SOMETHING"
+            android:textColor="@color/purple_500"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/view_pager"
+            app:layout_constraintStart_toStartOf="@+id/view_pager"
+            app:layout_constraintTop_toTopOf="@+id/view_pager" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:layout_constraintHorizontal_bias="0.215"
+            android:text="Dont Have account?"
+            android:textColor="#595454"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/view_pager"
+            app:layout_constraintStart_toStartOf="@+id/view_pager"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create new account."
+            app:layout_constraintHorizontal_bias="0.02"
+            android:layout_marginTop="2dp"
+            android:textSize="12dp"
+            android:textStyle="italic"
+            android:textColor="#D30303"
+            app:layout_constraintEnd_toEndOf="@+id/view_pager"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            app:layout_constraintEnd_toEndOf="@+id/view_pager"
+            app:layout_constraintStart_toStartOf="@+id/view_pager"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:hint="Email"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            app:layout_constraintEnd_toEndOf="@+id/view_pager"
+            app:layout_constraintStart_toStartOf="@+id/view_pager"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/log_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:transitionName="passwd" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="user name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                app:hintTextColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vie_bg"
+            android:text="Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/view_pager"
+            app:layout_constraintStart_toStartOf="@+id/view_pager" />
+
+        <TextView
+            android:id="@+id/loginWith"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:text="Or login with"
+            android:textColor="#5C5353"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_pager" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/googleIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/google"
+            app:elevation="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginWith"
+            app:layout_constraintVertical_bias="0.333" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/facebook"
+            app:elevation="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/googleIcon"
+            android:layout_marginRight="10dp"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.333"
+            app:layout_constraintTop_toBottomOf="@id/loginWith"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            app:backgroundTint="@android:color/transparent"
+            app:tint="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/facebook"
+            app:elevation="35dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+
+            app:layout_constraintStart_toEndOf="@+id/googleIcon"
+            app:layout_constraintTop_toBottomOf="@id/loginWith" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
