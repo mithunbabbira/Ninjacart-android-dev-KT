@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="colorPrimary">#60a844</color>
+    <color name="colorPrimaryDark">#eeeeee</color>
+    <color name="colorAccent">#F2F1EF</color>
+    <color name="actionbarcolor">#60a844</color>
+
+    <color name="textPrimaryColor">#000000</color>
+    <color name="activityBackground">#FFFFFF</color>
+    <color name="colorControlActivated">#60a844</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#BF0D05</color>
+    <color name="material_green">#BFDCB4</color>
+    <color name="light_red"> #FFCDD2 </color>
+    <color name="dark_red"> #EF9A9A </color>
+    <color name="black">#000000</color>
+    <color name="gloss_black"> #464648 </color>
+    <color name="red">#BF0D05</color>
+    <color name="orange">#EB8242</color>
+    <color name="selred">#ff9999</color>
+    <color name="text_grey">#979797</color>
+    <color name="shimmer_grey">#dddddd</color>
+    <color name="material_grey">#F2F1EF</color>
+    <color name="crimson_red">#E53935</color>
+    <color name="orderStatusInProgress">#005474</color>
+    <color name="col_8BC34A">#8BC34A</color>
+    <color name="col_689F38">#689F38</color>
+    <color name="darkGrey">#696969</color>
+    <color name="transparent"> #80000000 </color>
+    <color name="proccessing_amber">#FFC107</color>
+    <color name="tabular_green"> #e8f5e9 </color>
+    <color name="dark_blue"> #005474 </color>
+    <color name="darkBlue">#367ad9</color>
+    <color name="bn_green"> #FA43A047 </color>
+    <color name="nav_green"> #045855 </color>
+    <color name="lightBlue">#83a5d6</color>
+    <color name="light_blue">#55C8F0</color>
+    <color name="dialog_bg">#cc000000</color>
+    <color name="d_grey"> #D4D7E2 </color>
+    <color name="dark_blue_pressed"> #DD005474</color>
+    <color name="green_dark">#279014</color>
+    <color name="green_dark_pressed"> #FF279014</color>
+    <color name="bt_grey"> #DFDFDF </color>
+    <color name="bt_selector_grey"> #FF9F9F9F</color>
+    <color name="materialblue">#286bd1</color>
+    <color name="selected_grey">#ededed</color>
+    <color name="grey_background">#f4f4f4</color>
+    <color name="light_text_grey">#b3b3b3</color>
+    <color name="yellowish_grey">#bfbfb8</color>
+    <color name="searchBackground">#498433</color>
+    <color name="cole9e9e9">#e9e9e9</color>
+    <color name="assigned_failed">#FF7043</color>
+    <color name="light_grey">#E0E0E0</color>
+    <color name="col_dfdfdf">#dfdfdf</color>
+    <color name="whitegrey">#FFFFFFFF</color>
+    <color name="cyan">#00838f</color>
+    <color name="copper_green">#afd8d1</color>
+    <color name="purple">#bdb6e3</color>
+    <color name="light_red_e9a1ac">#e9a1ac</color>
+    <color name="background_light_green">#D0F0C0</color>
+</resources>

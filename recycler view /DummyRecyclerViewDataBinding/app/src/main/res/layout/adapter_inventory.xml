@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fefefe"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/llSkuImageHolder"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:background="@drawable/image_corner_background"
+                android:elevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvSkuNameHolder"
+                app:layout_constraintHorizontal_weight="1.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvSkuNameHolder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="start"
+                android:text="@{inventoryAdapterEntity.skuName}"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@id/tvSkuPriceHolder"
+                app:layout_constraintEnd_toStartOf="@id/tvSkuQuantityHolder"
+                app:layout_constraintHorizontal_weight="4"
+                app:layout_constraintStart_toEndOf="@id/llSkuImageHolder"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/tvSkuPriceHolder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="start"
+                android:text="@{inventoryAdapterEntity.price}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/tvSkuNameHolder"
+                app:layout_constraintStart_toStartOf="@id/tvSkuNameHolder"
+                app:layout_constraintTop_toBottomOf="@id/tvSkuNameHolder" />
+
+
+            <TextView
+                android:id="@+id/tvSkuQuantityHolder"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="@{inventoryAdapterEntity.diffQuantityStr}"
+                android:textColor="@color/dark_blue"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toEndOf="@id/tvSkuNameHolder"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <data>
+
+        <variable
+            name="inventoryAdapterEntity"
+            type="com.example.expandablerecyclerview.model.SkuReports" />
+
+        <import type="android.view.View" />
+
+    </data>
+</layout>
